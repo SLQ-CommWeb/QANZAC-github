@@ -302,3 +302,10 @@ font-size:90%;
 
 }
 
+/* Customisations to append a drop down arrow for menu items with children */
+  /* this adds an arrow to every link */
+  ul.nav.navbar-nav li > a:after { margin-left: 1px; content: url('./?a=282704'); font-size: 0.5em; color: #FFF; } 
+  
+
+  /* this removes the arrow when the link is the only child */
+  ul.nav.navbar-nav li > a:only-child:after { margin-left: 1px; content: ''; }  
